@@ -3,6 +3,7 @@ This is just re-written version of code shown in YouTube tutorial: Web App - Sea
 https://www.youtube.com/watch?v=lc8-vJ5r3e0&list=PLv9Pf9aNgemt82hBENyneRyHnD-zORB3l&index=5
 
 <h3>Requirements:</h3>
+· Permissions for script
 GoogleDrive spreadsheet with sheets:<br>
 · Options<br>
 · Data (with some content in first column)<br>
