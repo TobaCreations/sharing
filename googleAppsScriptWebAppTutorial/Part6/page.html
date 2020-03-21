@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <base target="_top">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <?!= include("page-css"); ?>
+   </head>
+  <body>
+    
+    <div class="container">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="fn" type="text" class="validate">
+          <label for="fn">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="ln" type="text" class="validate">
+          <label for="ln">Last Name</label>
+        </div>
+    </div> <!-- CLOSE ROW -->
+    
+    <div class="row">
+      <div class="input-field col s6">
+        <select id="app">
+        <option disabled selected>Choose your app</option> <?!= list; ?>
+        </select>
+        <label>Application</label>
+      </div>
+      <div class="input-field col s6">
+         <input id="prefDate" type="text" class="datepicker">
+         <label for="prefDate">Pick Appointment Date</label>
+       </div>
+      
+    </div> <!-- CLOSE ROW -->
+    
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="zip" type="text" class="validate">
+        <label for="zip">Zip Code</label>
+      </div>
+      <div class="input-field col s6">
+        <input disabled id="est" type="text" class="validate">
+        <label for="est">Estimate</label>
+      </div>
+    </div> <!-- CLOSE ROW -->
+    
+    <div class="row">
+      <button id="btn" class="waves-effect waves-light btn-small indigo darken-3"><i class="material-icons left">chevron_right</i>Run it!</button>
+    </div> <!-- CLOSE ROW -->
+   </div> <!-- CLOSE CONTAINER -->
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <?!= include("page-js"); ?>
+  </body>
+</html>
+
+
